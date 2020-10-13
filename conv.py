@@ -1,4 +1,6 @@
 import re
+import time
+t = time.time()
 a = open("raspis.json", "r", encoding='utf-8')
 d = ['<?xml version="1.0" encoding="UTF-8" ?>', '<root>']
 puti = ['root']
@@ -35,4 +37,4 @@ f = open('text.txt', 'w')
 for i in d:
         f.write(i + '\n')
 f.close()
-	
+print(time.time()-t)
