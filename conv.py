@@ -30,6 +30,9 @@ for i in a:
     elif match6:
         d.append(('    '*(len(puti)-1)) + "</" + str(puti[len(puti)-1]) + '>')
         puti.pop(len(puti)-1)
-
+a.close()
+f = open('text.txt', 'w')
 for i in d:
-	print(i)
+        f.write(i + '\n')
+f.close()
+	
