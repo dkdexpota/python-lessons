@@ -8,3 +8,4 @@ xml = dicttoxml.dicttoxml(a)
 with open("output.xml", "w+") as h:
   h.write(xml.decode())
 t = (time.time() - t)
+print(t) 
